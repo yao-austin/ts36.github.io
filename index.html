@@ -2,6 +2,26 @@
 <html lang="zh-tw">
 <head>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+<script>
+    $(document).ready(function() {
+        $("#button1").click(function() {
+                $(".image").hide(); // 隐藏所有图片
+                $("#image1").show(); // 显示第一个图片
+            });
+
+            $("#button2").click(function() {
+                $(".image").hide(); // 隐藏所有图片
+                $("#image2").show(); // 显示第二个图片
+            });
+
+            $("#button3").click(function() {
+                $(".image").hide(); // 隐藏所有图片
+                $("#image3").show(); // 显示第三个图片
+            });
+        });
+    });
+</script>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
@@ -458,25 +478,6 @@
 <script src="/js/next-boot.js"></script>
 
 
-<script>
-    $(document).ready(function() {
-        $("#button1").click(function() {
-                $(".image").hide(); // 隐藏所有图片
-                $("#image1").show(); // 显示第一个图片
-            });
-
-            $("#button2").click(function() {
-                $(".image").hide(); // 隐藏所有图片
-                $("#image2").show(); // 显示第二个图片
-            });
-
-            $("#button3").click(function() {
-                $(".image").hide(); // 隐藏所有图片
-                $("#image3").show(); // 显示第三个图片
-            });
-        });
-    });
-</script>
 
 
   
