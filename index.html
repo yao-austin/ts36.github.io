@@ -1,487 +1,688 @@
-<!DOCTYPE html>
-<html lang="zh-tw">
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
 <head>
- 
-</body>
-</html>
-
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 6.3.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"ts36.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
-  </script>
-
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://ts36.github.io/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="zh_TW">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-
-<link rel="canonical" href="http://ts36.github.io/">
-
-
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : true,
-    isPost : false,
-    lang   : 'zh-tw'
-  };
-</script>
-
-  <title>Hexo</title>
-  
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
+	<title>台北美食地圖</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Hexo</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-    </div>
-  </div>
-</div>
-
-
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
-
-  </li>
-  </ul>
-</nav>
-
-
-
-
-</div>
-    </header>
-
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content index posts-expand">
-            
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw">
-    <link itemprop="mainEntityOfPage" href="http://ts36.github.io/2023/10/08/%E5%8F%B0%E5%8D%97%E5%A5%BD%E5%A5%BD%E5%90%83-By-Tsou/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/10/08/%E5%8F%B0%E5%8D%97%E5%A5%BD%E5%A5%BD%E5%90%83-By-Tsou/" class="post-title-link" itemprop="url">台南好好吃 By Tsou</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2023-10-08 23:34:32" itemprop="dateCreated datePublished" datetime="2023-10-08T23:34:32+08:00">2023-10-08</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw">
-    <link itemprop="mainEntityOfPage" href="http://ts36.github.io/2023/10/08/postName/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/10/08/postName/" class="post-title-link" itemprop="url">postName</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2023-10-08 18:28:33" itemprop="dateCreated datePublished" datetime="2023-10-08T18:28:33+08:00">2023-10-08</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw">
-    <link itemprop="mainEntityOfPage" href="http://ts36.github.io/2023/10/08/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/10/08/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2023-10-08 18:09:42" itemprop="dateCreated datePublished" datetime="2023-10-08T18:09:42+08:00">2023-10-08</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
-  
-
-
-
-          </div>
-          
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
-
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          Table of Contents
-        </li>
-        <li class="sidebar-nav-overview">
-          Overview
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">John Doe</p>
-  <div class="site-description" itemprop="description"></div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">3</span>
-          <span class="site-state-item-name">posts</span>
-        </a>
-      </div>
-  </nav>
-</div>
-
-
-
-      </div>
-
-    </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2023</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
-</div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
-  </div>
-
-        
-
-
-
-
-
-
-
-
-      </div>
-    </footer>
-  </div>
-
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/muse.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="divided">
+
+		<!-- Banner -->
+		<section
+			class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+			<div class="content">
+				<h1>台北美食地圖</h1>
+				<p class="major">這是一個台北美食推薦網站，右方為 <a
+						href="https://www.metro.taipei/cp.aspx?n=91974F2B13D997F1">台北捷運地圖</a> and released for free
+					under the <a href="https://html5up.net/license">Creative Commons</a>.</p>
+				<ul class="actions stacked">
+					<li><a href="#gallery" class="button large wide smooth-scroll-middle">開始探索</a></li>
+				</ul>
+			</div>
+			<div class="image" style="position: relative;">
+				<!-- 圖片 -->
+				<img src="images/map.jpg" alt="" />
+
+				<!-- 藍線 台北車站 -->
+				<a href="pages/1.html" class="map-button button-taipei"
+					style="position: absolute; bottom:  42.5%; left: 31.5%;">台北車站</a>
+				<!-- 藍線 忠孝新生 -->
+				<a href="pages/2.html" class="map-button button-2"
+					style="position: absolute; bottom: 42.5%; left: 40.5%;">忠孝新生</a>
+				<!-- 藍線 忠孝復興 -->
+				<a href="pages/3.html" class="map-button button-3"
+					style=" bottom: 42.5%; left: 48%;">忠孝復興</a>
+				<!-- 藍線 西門 -->
+				<a href="pages/4.html" class="map-button button-4"
+					style="position: absolute; bottom: 42.5%; left: 28%;">西門</a>
+				<!-- 藍線 板橋 -->
+				<a href="pages/5.html" class="map-button button-5"
+					style="position: absolute; bottom: 30%; left: 12%;width: 80px;">  板橋  </a>
+				<!-- 藍線 南港展覽館 -->
+				<a href="pages/6.html" class="map-button button-nangang" 
+					style="position: absolute; bottom: 42.5%; right: 0%;">南港展覽館</a>
+				
+					<!--橘綠：古亭 -->
+				<a href="pages/7.html" class="map-button button-7" 
+				style="position: absolute; bottom: 30%; left: 35%;width: 80px;">古亭</a>
+				<!-- 橘綠：松江南京 -->
+				<a href="pages/8.html" class="map-button button-8" 
+					style="position: absolute; bottom: 50%; left: 40.5%;">松江南京</a>
+					<!-- 橘紅：東門 -->
+				<a href="pages/9.html" class="map-button button-nangang" 
+				style="position: absolute; bottom:  34%; left: 38%;width: 80px;">東門 </a>
+					<!--橘紅：民權西路 -->
+				<a href="pages/10.html" class="map-button button-10" 
+				style="position: absolute; bottom:  57%; left: 31.5%;">民權西路</a>
+				<!--紅咖：大安 -->
+				<a href="pages11.html" class="map-button button-11" 
+					style="position: absolute; bottom:  34%; left: 50%;width: 80px;">大安</a>
+					<!-- 紅綠：中正紀念堂 -->
+				<a href="pages/12.html" class=" map-button button-12" 
+				style="position: absolute; bottom:  34%; left: 28%;">中正紀念堂</a>
+				<!-- 紅綠：中山 -->
+				<a href="pages/13.html" class="map-button button-13" 
+					style="position: absolute; bottom:  50%; left: 31.5%;width: 80px;">中山</a>
+					<!-- 紅線：淡水 -->
+				<a href="pages/14.html" class="map-button button-14" 
+				style="position: absolute; top: 2%; left: 2%;width: 80px;">淡水</a>
+				<!-- 綠咖：南京復興 -->
+				<a href="pages/15.html" class="map-button button-15" 
+					style="position: absolute; bottom: 50%; left: 50%;">南京復興</a>
+			</div>
+		</section>
+
+		<!-- Five -->
+		<section class="wrapper style1 align-center">
+			<!-- <div class="inner">
+				<h2>捷運站</h2>
+				<p>以下為各站捷運站美食</p>
+			</div> -->
+
+			<!-- Gallery -->
+			<div class="gallery style2 medium lightbox onscroll-fade-in" id="gallery">
+				<!-- <h2>捷運站</h2>
+				<p>以下為各站捷運站美食</p> -->
+				<!-- 台北車站 -->
+				<article>
+					<a href="#first" class="image">
+						<img src="images/spotlight01.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>台北車站</h3>
+						<p>位於臺灣臺北市中正區，為臺鐵、台灣高鐵、台北捷運的地下化鐵路車站。</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<!-- 忠孝新生 -->
+				<article>
+					<a href="#two" class="image">
+						<img src="images/spotlight02.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>忠孝新生</h3>
+						<p>位於臺北市中正區、大安區交會處，為捷運板南線與中和新蘆線交會之車站。</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<!-- 忠孝復興 -->
+				<article>
+					<a href="#three" class="image">
+						<img src="images/spotlight03.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>忠孝復興</h3>
+						<p>是一個高架與地下交會車站，共設有5處出入口；地下車站東側與東區地下街連通，出口4並與遠東SOGO百貨忠孝館地下一樓連通。</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<!-- 西門 -->
+				<article>
+					<a href="#four" class="image">
+						<img src="images/spotlight04.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>西門</h3>
+						<p>位於萬華區，是不少年輕人的天堂，還曾經是不少明星舉辦簽唱會的熱門場地，還有著像是西門紅樓、萬年大樓等各種IG 打卡景點。</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<!-- 板橋 -->
+				<article>
+					<a href="#five" class="image">
+						<img src="images/spotlight05.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>板橋</h3>
+						<p>位於臺灣新北市板橋區，為臺鐵縱貫線、台灣高鐵、臺北捷運板南線、臺北捷運環狀線的鐵路車站。</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<!-- 南港展覽館 -->
+				<article>
+					<a href="#six" class="image">
+						<img src="images/spotlight06.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>南港展覽館</h3>
+						<p>位於臺灣臺北市南港區東端，距新北市汐止區界250公尺處，為臺北捷運文湖線與板南線交會的捷運車站（另一為忠孝復興站），也是兩條路線的端點站。</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<!-- 古亭 -->
+				<article>
+					<a href="#seven" class="image">
+						<img src="images/spotlight07.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>古亭</h3>
+						<p>位於臺北市西南方，為市中心通往文山、新店的交通要衝，也是古時自新店溪取水的霧裡薛圳和瑠公圳流入臺北盆地時必經之地。</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<!-- 松江南京 -->
+				<article>
+					<a href="#eight" class="image">
+						<img src="images/spotlight08.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>松江南京</h3>
+						<p>江路與南京東路口，為台北捷運以交叉路口命名之唯一東西向道路不在前端之特例，中和新蘆線車站位於松江路下方，松山新店線車站位於南京東路下方。</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<!-- 東門 -->
+				<article>
+					<a href="#nine" class="image">
+						<img src="images/spotlight09.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>東門</h3>
+						<p>是中和新蘆線與淡水信義線的交會車站，鄰近中正紀念堂及永康街商圈，這個區域共有5條潛盾隧道堆疊交會，包括中和新蘆線2條（上、下行）、淡水信義線2條（上、下行）及共同管道潛盾隧道。</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<!-- 民權西路 -->
+				<article>
+					<a href="#ten" class="image">
+						<img src="images/spotlight10.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>民權西路</h3>
+						<p>位於台北市中山區、大同區交界處，為台北捷運淡水信義線（淡水線）與中和新蘆線（新莊線）交會的捷運車站。</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<!-- 大安 -->
+				<article>
+					<a href="#eleven" class="image">
+						<img src="images/spotlight11.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>大安</h3>
+						<p>位於復興南路與信義路口，文湖線車站位於復興南路上，信義線車站位於信義路下方。</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<!-- 中正紀念堂 -->
+				<article>
+					<a href="#twelve" class="image">
+						<img src="images/spotlight11.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>中正紀念堂</h3>
+						<p>副站名「南門」，位於台北市中正區，為台北捷運淡水信義線與松山新店線交會的捷運車站。</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<!-- 中正紀念堂 -->
+				<article>
+					<a href="#twelve" class="image">
+						<img src="images/spotlight12.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>中正紀念堂</h3>
+						<p>副站名「南門」，位於台北市中正區，為台北捷運淡水信義線與松山新店線交會的捷運車站。</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<!-- 中山 -->
+				<article>
+					<a href="#thirteen" class="image">
+						<img src="images/spotlight13.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>中山</h3>
+						<p> 被譽為「年輕人最愛捷運站」的中山捷運站，位於紅線和綠線的轉乘站，除了交通相當方便之外，在捷運站附近也形成「南西商圈」。</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<!-- 淡水 -->
+				<article>
+					<a href="#fourteen" class="image">
+						<img src="images/spotlight14.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>淡水</h3>
+						<p> 為臺北捷運淡水信義線與淡水線的端點站，於1997年隨著捷運淡水線淡水站至中山站段正式通車而啟用，新北捷運亦將本站規劃納入淡海輕軌藍海線。</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<!-- 南京復興 -->
+				<article>
+					<a href="#fifteen" class="image">
+						<img src="images/spotlight15.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>南京復興</h3>
+						<p> 位在南京東路、復興北路交會處（主要站體位於中崙，僅西側出口1、2位於朱厝崙境內）。</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+			</div>
+
+		</section>
+
+		<!-- 1藍紅：台北車站 -->
+		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
+			id="first">
+			<div class="content">
+				<h2>藍紅：台北車站</h2>
+				<p>位於臺灣臺北市中正區，為臺鐵、台灣高鐵、台北捷運的地下化鐵路車站。</p>
+				<ul class="actions stacked">
+					<li><a href="pages/1.html" class="button">探索餐廳</a></li>
+				</ul>
+			</div>
+			<div class="image">
+				<img src="images/spotlight01.jpg" alt="" />
+			</div>
+		</section>
+
+		<!-- 2藍橘：忠孝新生 -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in"
+			id="two">
+			<div class="content">
+				<h2>藍橘：忠孝新生</h2>
+				<p>位於臺北市中正區、大安區交會處，為捷運板南線與中和新蘆線交會之車站。</p>
+				<ul class="actions stacked">
+					<li><a href="pages/2.html" class="button">探索餐廳</a></li>
+				</ul>
+			</div>
+			<div class="image">
+				<img src="images/spotlight02.jpg" alt="" />
+			</div>
+		</section>
+
+		<!-- 3藍咖：忠孝復興 -->
+		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
+			id="three">
+			<div class="content">
+				<h2>藍咖：忠孝復興</h2>
+				<p>是一個高架與地下交會車站，共設有5處出入口；地下車站東側與東區地下街連通，出口4並與遠東SOGO百貨忠孝館地下一樓連通。</p>
+				<ul class="actions stacked">
+					<li><a href="pages/3.html" class="button">探索餐廳</a></li>
+				</ul>
+			</div>
+			<div class="image">
+				<img src="images/spotlight03.jpg" alt="" />
+			</div>
+		</section>
+
+		<!-- 4藍綠：西門 -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in"
+			id="four">
+			<div class="content">
+				<h2>藍綠：西門</h2>
+				<p>位於萬華區，是不少年輕人的天堂，還曾經是不少明星舉辦簽唱會的熱門場地，還有著像是西門紅樓、萬年大樓等各種IG 打卡景點。</p>
+				<ul class="actions stacked">
+					<li><a href="pages/4.html" class="button">探索餐廳</a></li>
+				</ul>
+			</div>
+			<div class="image">
+				<img src="images/spotlight04.jpg" alt="" />
+			</div>
+		</section>
+
+		<!-- 5藍線：板橋 -->
+		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
+			id="five">
+			<div class="content">
+				<h2>藍線：板橋</h2>
+				<p>位於臺灣新北市板橋區，為臺鐵縱貫線、台灣高鐵、臺北捷運板南線、臺北捷運環狀線的鐵路車站。</p>
+				<ul class="actions stacked">
+					<li><a href="pages/5.html" class="button">探索餐廳</a></li>
+				</ul>
+			</div>
+			<div class="image">
+				<img src="images/spotlight05.jpg" alt="" />
+			</div>
+		</section>
+
+		<!-- 6藍線：南港展覽館 -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in"
+			id="six">
+			<div class="content">
+				<h2>藍線：南港展覽館</h2>
+				<p>位於臺灣臺北市南港區東端，距新北市汐止區界250公尺處，為臺北捷運文湖線與板南線交會的捷運車站（另一為忠孝復興站），也是兩條路線的端點站</p>
+				<ul class="actions stacked">
+					<li><a href="pages/6.html" class="button">探索餐廳</a></li>
+				</ul>
+			</div>
+			<div class="image">
+				<img src="images/spotlight06.jpg" alt="" />
+			</div>
+		</section>
+
+		<!-- 7橘綠：古亭 -->
+		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
+			id="seven">
+			<div class="content">
+				<h2>橘綠：古亭</h2>
+				<p>位於臺北市西南方，為市中心通往文山、新店的交通要衝，也是古時自新店溪取水的霧裡薛圳和瑠公圳流入臺北盆地時必經之地。</p>
+				<ul class="actions stacked">
+					<li><a href="pages/7.html" class="button">探索餐廳</a></li>
+				</ul>
+			</div>
+			<div class="image">
+				<img src="images/spotlight07.jpg" alt="" />
+			</div>
+		</section>
+
+		<!-- 8橘綠：松江南京 -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in"
+			id="eight">
+			<div class="content">
+				<h2>橘綠：松江南京</h2>
+				<p>江路與南京東路口，為台北捷運以交叉路口命名之唯一東西向道路不在前端之特例，中和新蘆線車站位於松江路下方，松山新店線車站位於南京東路下方。</p>
+				<ul class="actions stacked">
+					<li><a href="pages/8.html" class="button">探索餐廳</a></li>
+				</ul>
+			</div>
+			<div class="image">
+				<img src="images/spotlight08.jpg" alt="" />
+			</div>
+		</section>
+
+		<!-- 9橘紅：東門 -->
+		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
+			id="nine">
+			<div class="content">
+				<h2>橘紅：東門</h2>
+				<p>是中和新蘆線與淡水信義線的交會車站，鄰近中正紀念堂及永康街商圈，這個區域共有5條潛盾隧道堆疊交會，包括中和新蘆線2條（上、下行）、淡水信義線2條（上、下行）及共同管道潛盾隧道。</p>
+				<ul class="actions stacked">
+					<li><a href="pages/9.html" class="button">探索餐廳</a></li>
+				</ul>
+			</div>
+			<div class="image">
+				<img src="images/spotlight09.jpg" alt="" />
+			</div>
+		</section>
+
+		<!-- 10橘紅：民權西路 -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in"
+			id="ten">
+			<div class="content">
+				<h2>橘紅：民權西路</h2>
+				<p>位於台北市中山區、大同區交界處，為台北捷運淡水信義線（淡水線）與中和新蘆線（新莊線）交會的捷運車站。</p>
+				<ul class="actions stacked">
+					<li><a href="pages/10.html" class="button">探索餐廳</a></li>
+				</ul>
+			</div>
+			<div class="image">
+				<img src="images/spotlight10.jpg" alt="" />
+			</div>
+		</section>
+
+		<!-- 11紅咖：大安 -->
+		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
+			id="eleven">
+			<div class="content">
+				<h2>紅咖：大安</h2>
+				<p>位於復興南路與信義路口，文湖線車站位於復興南路上，信義線車站位於信義路下方。</p>
+				<ul class="actions stacked">
+					<li><a href="pages/11.html" class="button">探索餐廳</a></li>
+				</ul>
+			</div>
+			<div class="image">
+				<img src="images/spotlight11.jpg" alt="" />
+			</div>
+		</section>
+
+		<!-- 12紅綠：中正紀念堂 -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in"
+			id="twelve">
+			<div class="content">
+				<h2>紅綠：中正紀念堂</h2>
+				<p>副站名「南門」，位於台北市中正區，為台北捷運淡水信義線與松山新店線交會的捷運車站。</p>
+				<ul class="actions stacked">
+					<li><a href="pages/12.html" class="button">探索餐廳</a></li>
+				</ul>
+			</div>
+			<div class="image">
+				<img src="images/spotlight12.jpg" alt="" />
+			</div>
+		</section>
+
+		<!-- 13紅綠：中山 -->
+		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
+			id="thirteen">
+			<div class="content">
+				<h2>紅綠：中山</h2>
+				<p>被譽為「年輕人最愛捷運站」的中山捷運站，位於紅線和綠線的轉乘站，除了交通相當方便之外，在捷運站附近也形成「南西商圈」。</p>
+				<ul class="actions stacked">
+					<li><a href="pages/13.html" class="button">探索餐廳</a></li>
+				</ul>
+			</div>
+			<div class="image">
+				<img src="images/spotlight13.jpg" alt="" />
+			</div>
+		</section>
+
+		<!-- 14紅線：淡水 -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in"
+			id="fourteen">
+			<div class="content">
+				<h2>紅線：淡水</h2>
+				<p>為臺北捷運淡水信義線與淡水線的端點站，於1997年隨著捷運淡水線淡水站至中山站段正式通車而啟用，新北捷運亦將本站規劃納入淡海輕軌藍海線。</p>
+				<ul class="actions stacked">
+					<li><a href="pages/14.html" class="button">探索餐廳</a></li>
+				</ul>
+			</div>
+			<div class="image">
+				<img src="images/spotlight14.jpg" alt="" />
+			</div>
+		</section>
+
+		<!-- 15綠咖：南京復興 -->
+		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
+			id="fifteen">
+			<div class="content">
+				<h2>綠咖：南京復興</h2>
+				<p>位在南京東路、復興北路交會處（主要站體位於中崙，僅西側出口1、2位於朱厝崙境內）。</p>
+				<ul class="actions stacked">
+					<li><a href="pages/15.html" class="button">探索餐廳</a></li>
+				</ul>
+			</div>
+			<div class="image">
+				<img src="images/spotlight15.jpg" alt="" />
+			</div>
+		</section>
+
+
+
+
+
+
+		<!-- Six -->
+		<section class="wrapper style1 align-center">
+			<div class="inner">
+				<h2>Ipsum sed consequat</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit
+					amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus,
+					pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
+				<div class="items style1 medium onscroll-fade-in">
+					<section>
+						<span class="icon style2 major fa-gem"></span>
+						<h3>Lorem</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci
+							amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+					</section>
+					<section>
+						<span class="icon solid style2 major fa-save"></span>
+						<h3>Ipsum</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci
+							amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+					</section>
+					<section>
+						<span class="icon solid style2 major fa-chart-bar"></span>
+						<h3>Dolor</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci
+							amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+					</section>
+					<section>
+						<span class="icon solid style2 major fa-wifi"></span>
+						<h3>Amet</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci
+							amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+					</section>
+					<section>
+						<span class="icon solid style2 major fa-cog"></span>
+						<h3>Magna</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci
+							amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+					</section>
+					<section>
+						<span class="icon style2 major fa-paper-plane"></span>
+						<h3>Tempus</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci
+							amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+					</section>
+					<section>
+						<span class="icon solid style2 major fa-desktop"></span>
+						<h3>Aliquam</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci
+							amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+					</section>
+					<section>
+						<span class="icon solid style2 major fa-sync-alt"></span>
+						<h3>Elit</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci
+							amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+					</section>
+					<section>
+						<span class="icon solid style2 major fa-hashtag"></span>
+						<h3>Morbi</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci
+							amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+					</section>
+					<section>
+						<span class="icon solid style2 major fa-bolt"></span>
+						<h3>Turpis</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci
+							amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+					</section>
+					<section>
+						<span class="icon solid style2 major fa-envelope"></span>
+						<h3>Ultrices</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci
+							amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+					</section>
+					<section>
+						<span class="icon solid style2 major fa-leaf"></span>
+						<h3>Risus</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci
+							amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+					</section>
+				</div>
+			</div>
+		</section>
+
+		<!-- Seven -->
+		<section class="wrapper style1 align-center">
+			<div class="inner medium">
+				<h2>Get in touch</h2>
+				<form method="post" action="#">
+					<div class="fields">
+						<div class="field half">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" value="" />
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input type="email" name="email" id="email" value="" />
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="6"></textarea>
+						</div>
+					</div>
+					<ul class="actions special">
+						<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+					</ul>
+				</form>
+
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="wrapper style1 align-center">
+			<div class="inner">
+				<ul class="icons">
+					<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a>
+					</li>
+					<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a>
+					</li>
+					<li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a>
+					</li>
+					<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+			</div>
+		</footer> 
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+	<!-- 引入 Google 登錄 API -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!-- 引入主要的 JavaScript 檔案 -->
+    <script src="main.js"></script>
 
 </body>
+
 </html>
