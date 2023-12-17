@@ -22,13 +22,22 @@ if ($conn->connect_error) {
 $data = json_decode(file_get_contents("php://input"));
 
 // 取得用戶輸入的留言內容和用戶ID
-$Name = $data->Name;
-$Message = $data->Message;
-$Email = $data->Email;
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $message = $_POST["message"];
 
-// 將留言存儲到資料庫的 comments 表中
-$sql = "INSERT INTO Comments (Name, Message,Email) VALUES ('$Name', '$Message','$Email')";
-$result = $conn->query($sql);
+    // 在這裡將資料插入到資料庫
+    $sql = "INSERT INTO YourTableName (Name, Email, Message) VALUES ('$name', '$email', '$message')";
+    $result = $conn->query($sql);
+    
+    // 檢查是否成功插入資料
+    if ($result === TRUE) {
+        echo "資料插入成功";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
 
 // 關閉連線
 $conn->close();
