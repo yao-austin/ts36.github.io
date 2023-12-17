@@ -1,12 +1,17 @@
 <?php
 // 假設你的 MySQL 連線資訊
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "restaurant_db";
+$serverName = "travel98.database.windows.net";
+$database = "travel";
+$uid = "tsouadmin";
+$pass = "Qq0989260287";
 
-// 建立 MySQL 連線
-$conn = new mysqli($servername, $username, $password, $dbname);
+$connectionInfo = [
+    "Database" => $database,
+    "Uid" => $uid,
+    "PWD" => $pass,
+];
+$conn = sqlsrv_connect($serverName, $connectionInfo);
+
 
 // 檢查連線是否成功
 if ($conn->connect_error) {
@@ -17,11 +22,12 @@ if ($conn->connect_error) {
 $data = json_decode(file_get_contents("php://input"));
 
 // 取得用戶輸入的留言內容和用戶ID
-$user_id = $data->user_id;
-$comment = $data->comment;
+$Name = $data->Name;
+$Message = $data->Message;
+$Email = $data->Email;
 
 // 將留言存儲到資料庫的 comments 表中
-$sql = "INSERT INTO comments (user_id, comment_text) VALUES ('$user_id', '$comment')";
+$sql = "INSERT INTO Comments (Name, Message,Email) VALUES ('$Name', '$Message','$Email')";
 $result = $conn->query($sql);
 
 // 關閉連線
