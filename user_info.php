@@ -44,6 +44,7 @@ if(mysqli_num_rows($select) > 0){
                 	<h2 class="mb-0" style="color:midnightblue;">名字: <?php echo $row['name']; ?></h2>
                     <h2 class="mb-0" style="color:springgreen;">Email: <?php echo $row['email']; ?></h2>
                     <h2 class="mb-0" style="color:orange;">電話號碼: <?php echo $row['phone']; ?></h2>
+                
                    
           	</div>
      	</div>

@@ -14,6 +14,7 @@
 	  </div>
 	  <div class="card-body">
 	    <a href="order_info.php" class="btn btn-outline-success">查看訂單</a>
+	    <a href="index.php" class="btn btn-outline-info">返回首頁</a>
 	  </div>
 	</div>
 </body>

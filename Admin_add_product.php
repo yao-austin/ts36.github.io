@@ -31,6 +31,7 @@ if(isset($_POST['add_product'])){
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
 	<title>管理員編輯餐點</title>
 	
 </head>
