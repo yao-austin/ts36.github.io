@@ -1,9 +1,9 @@
 <?php
 
 // Connection details for MS SQL Server
-$serverName = "haha888.database.windows.net"; // Replace with your SQL Server's name or IP address
+$serverName = "hahaserver88.database.windows.net"; // Replace with your SQL Server's name or IP address
 $connectionOptions = array(
-    "Database" => "haha888", // Replace with your database name
+    "Database" => "foodorder", // Replace with your database name
     "Uid" => "yaoyao", // Replace with your SQL Server username
     "PWD" => "Qq0989260287" // Replace with your SQL Server password
 );
